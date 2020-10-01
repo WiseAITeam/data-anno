@@ -1,0 +1,53 @@
+.pairDisplay {
+    width: fit-content;
+    margin: auto 0;
+}
+
+.pairDisplayImage {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+.segCheckTools {
+    height: fit-content;
+    margin-bottom: 1rem;
+    p {
+        margin: 0.5rem;
+        width: fit-content;
+        display: inline-block;
+    }
+    button {
+        float: right;
+    }
+}
+
+#backTitle {
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+#overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    background-color: rgba(33, 33, 33, 0.5);
+    display: none;
+
+    &.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: ease-in-out;
+    }
+
+    #spinner {
+        width: fit-content;
+    }
+}

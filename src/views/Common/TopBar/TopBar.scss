@@ -1,0 +1,24 @@
+.navbar {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-left: 0;
+    border-right: 0;
+    z-index: 20;
+}
+
+.navbar-brand {
+    font-size: 1rem !important;
+}
+
+.topbar-nav {
+    margin: 0;
+    text-align: center;
+}
+
+.topbar-inactive {
+    color: #808080 !important;
+}
+
+.topbar-hidden {
+    opacity: 0;
+}

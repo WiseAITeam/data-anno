@@ -1,0 +1,109 @@
+#controlPanel {
+    height: 94%;
+    overflow-y: auto;
+    width: 100%;
+    border-left: 1px solid lightgrey;
+    padding: 2rem;
+
+    .internalIDIndex {
+        width: 100%;
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .individual-card {
+        padding: 1rem;
+        margin: 1rem 0;
+
+        .card-body {
+            padding: 0;
+        }
+    }
+
+    .btn.btn-light {
+        &.active {
+            font-weight: bold;
+            border: 1px solid grey;
+        }
+    }
+
+    .btn-group-vertical {
+        input {
+            display: none;
+        }
+    }
+
+    .landmark-done-tick, .ocr-done-tick {
+        display: none;
+    }
+
+    .landmark-tab, .ocr-tab {
+        color: grey;
+    }
+
+    .labelled-landmark.landmark-tab {
+        background-color: #d3d3d3;
+        color: black;
+
+        .landmark-done-tick {
+            display: block;
+            float: right;
+        }
+
+        .ocr-done-tick {
+            display: block;
+            float: right;
+        }
+    }
+
+    .selected-landmark, .selected-ocr {
+        border: 2px solid #007bff;
+    }
+
+    .ocr-details.ocr-tab {
+        background-color: #d3d3d3;
+        color: black;
+    }
+    
+    .block-button {
+        margin: 0.1rem 0;
+        width: calc(100% - 0.1rem - 0.1rem);
+    }
+
+    .common-button {
+        margin: 0.1rem;
+        width: calc(50% - 0.1rem - 0.1rem);
+    }
+}
+
+#folder-number {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-top: 0;
+    border-right: 0;
+    width: 100%;
+
+    p {
+        vertical-align: middle;
+        width: fit-content;
+        display: inline-block;
+        margin: 0.3rem 2rem;
+    }
+
+    .nav-button {
+        padding: 0.2rem 0.4rem;
+    }
+
+    #quit-button {
+        position: absolute;
+        right: 1rem;
+        padding: 0.3rem 0.7rem;
+    }
+}
+
+.disabled-controls {
+    cursor: wait;
+}
